@@ -10,3 +10,11 @@ qa1  ansible_host=34.207.221.40
 [first]
 dev1
 qa1
+
+[groupofgroups:children]
+dev
+first
+
+
+[devsubset]
+dev[1:2]
